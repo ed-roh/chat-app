@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+$gray-300: #a3a3a3;
+$gray-400: #858585;
+$primary-400: #35596c;
+$primary-500: #0f2936;
+$primary-600: #091d2b;
+$primary-700: #051926;
+$primary-800: #060f14;
+$secondary-300: #7ac5d7;
+$secondary-500: #219ebc;
+$secondary-800: #00b5e0;
+$tertiary-50: #fff8e6;
+$tertiary-100: #fff1cd;
+$quaternary-500: #fb8500;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Rubik", sans-serif;
+}
+
+.layout {
+  width: 100%;
+  display: flex;
+}
+
+.servers {
+  background-color: $primary-500;
+}
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropzone {
+  width: 30px !important;
+  height: 15px !important;
+}
+
+.login-page {
+  background-color: $primary-500;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  color: $tertiary-50;
+}
+
+.login-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 10px 0;
+  background-color: $primary-600;
+  color: $tertiary-50;
+}
+
+.register-change {
+  text-decoration: underline;
+  color: $secondary-500;
+}
+
+.register-change:hover {
+  text-decoration: underline;
+  color: $tertiary-100;
+  cursor: pointer;
+}
+
+/* Chat Styling */
+.ce-chat-engine {
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+}
+
+/* Chat List */
+.server-channels {
+  display: flex;
+  align-items: center;
+  padding: 7px 20px !important;
+  gap: 15px;
+}
+
+.horizontal-rule {
+  margin: 15px 0px !important;
+  border: 0.5px solid $primary-400 !important;
+}
+
+.list-category {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: $gray-400 !important;
+  padding: 0px 25px !important;
+}
+
+.category-icon {
+  color: $gray-400 !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.icon {
+  color: $tertiary-50 !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.icon-phone {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.icon-chat {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.message-form-preview {
+  position: relative;
+}
+
+.message-form-icon-x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $primary-500 !important;
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer;
+}
+
+.message-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 8px;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $primary-400 !important;
+  border-radius: 5px !important;
+  padding: 5px 15px 5px 20px !important;
+  background: none;
+  width: 80%;
+}
+
+.message-form-preview-image {
+  width: 40px;
+  height: 40px;
+}
+
+.message-form-input-container {
+  flex-basis: 100%;
+  position: relative;
+  top: -10px;
+}
+
+.message-form-input,
+.message-form-input:focus,
+.message-form-input:active {
+  all: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $tertiary-50 !important;
+  z-index: 2 !important;
+  width: 100% !important;
+}
+
+.message-form-assist {
+  all: unset;
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $gray-300 !important;
+  // background: transparent;
+  z-index: 1;
+}
+
+.message-form-icon-airplane {
+  color: $secondary-500 !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.message-form-icon-clip:hover,
+.message-form-icon-airplane:hover {
+  color: $secondary-800 !important;
+  cursor: pointer;
+}
+
+.message-form-icon-clip {
+  color: $primary-400 !important;
+  width: 21px !important;
+  height: 21px !important;
+}
+
+.message-form-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.vertical-line {
+  height: 18px;
+  border: 0.5px solid $primary-400 !important;
+  display: inline-block;
+}
+
+/* CHAT LIST */
+.ce-chat-list {
+  overflow-y: hidden !important;
+}
+
+.header-text {
+  margin: 10px 0 !important;
+}
+
+.ce-chat-list-column {
+  background-color: $primary-600 !important;
+  overflow-y: hidden !important;
+  border-right: 1px solid $primary-400 !important;
+}
+
+.ce-chat-form {
+  background-color: $primary-600 !important;
+}
+
+.ce-chat-form-title {
+  top: 20px !important;
+  font-family: "Rubik" !important;
+  font-weight: bold !important;
+  font-size: 24px !important;
+}
+
+.ce-chat-form-button {
+  border: none !important;
+  border-radius: 33px !important;
+  color: $primary-600 !important;
+  padding: 4px 15px !important;
+  top: 15px !important;
+}
+
+.ce-chat-list {
+  background-color: $primary-600 !important;
+}
+
+.ce-chat-card {
+  border-radius: 0px !important;
+  padding: 0px 20px !important;
+}
+
+.ce-chat-card-title {
+  top: 16px !important;
+  font-family: "Rubik" !important;
+}
+
+.ce-chat-card-subtitle {
+  bottom: 16px !important;
+  color: $tertiary-100 !important;
+  font-family: "Rubik" !important;
+  font-weight: 300 !important;
+}
+
+.ce-chat-card-time-stamp {
+  bottom: 16px !important;
+  color: $gray-300 !important;
+  font-family: "Rubik" !important;
+  right: 16px !important;
+}
+
+.ce-active-chat-card {
+  background-color: $secondary-800 !important;
+  color: $tertiary-100 !important;
+}
+
+.ce-chat-card-unread {
+  background-color: $quaternary-500 !important;
+  right: 16px !important;
+}
+
+.ce-chat-card-avatar {
+  left: 14px !important;
+}
+
+/* Chat Feed */
+.ce-chat-feed-column {
+  overflow-y: hidden !important;
+  border: none !important;
+}
+
+.ce-chat-feed {
+  background-color: $primary-700 !important;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px !important;
+  border-bottom: 1px solid $primary-400 !important;
+}
+
+.ce-chat-header-title {
+  font-family: "Rubik" !important;
+  left: 68px !important;
+}
+
+.ce-chat-header-subtitle {
+  font-family: "Rubik" !important;
+}
+
+.ce-chat-header {
+  background-color: $primary-700 !important;
+  color: $tertiary-50 !important;
+  border-bottom: 1px solid $primary-400 !important;
+  padding: 10px !important;
+}
+
+.ce-avatar-dot {
+  background-color: $secondary-500 !important;
+  margin: 5px 0 !important;
+}
+
+.ce-attachment-input {
+  bottom: 4px !important;
+  margin-left: 15px !important;
+}
+
+#ce-send-message-button {
+  background-color: $secondary-300 !important;
+  padding: 3px 10px !important;
+  bottom: 5px !important;
+}
+
+.ce-attachment-icon {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.ce-message-list {
+  background-color: $primary-800 !important;
+  height: calc((100% - 100px) - 68px) !important;
+  border-bottom: 1px solid $primary-400 !important;
+}
+
+.ce-message-list::-webkit-scrollbar-track {
+  background: $primary-800;
+}
+
+.ce-message-list::-webkit-scrollbar-thumb {
+  background: $primary-800;
+}
+
+.ce-message-list::-webkit-scrollbar-track:hover {
+  background: $primary-800;
+}
+
+.ce-message-list-content {
+  padding: 20px !important;
+  overflow-y: hidden !important;
+}
+
+.ce-message-date-text {
+  font-family: "Rubik" !important;
+  color: $gray-300 !important;
+  font-size: 12px !important;
+  margin: 10px 0 !important;
+}
+
+.ce-message-form {
+  background-color: $primary-700 !important;
+  border: 1px solid $primary-400 !important;
+  border-radius: 5px !important;
+  margin: 20px !important;
+  width: calc(100% - 40px) !important;
+}
+
+.ce-message-form-input {
+  background-color: $primary-700 !important;
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+  border: none !important;
+}
+
+.ce-my-message-body {
+  font-family: "Rubik" !important;
+  background-color: $secondary-500 !important;
+  color: $tertiary-50 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+}
+
+.ce-their-message-body {
+  font-family: "Rubik" !important;
+  background-color: $gray-300 !important;
+  color: $tertiary-50 !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+}
+
+.ce-my-message-timestamp {
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+}
+
+.ce-their-message-timestamp {
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+}
+
+.ce-their-message-sender-username {
+  padding-left: 50px !important;
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+}
+
+/* Chat Settings */
+.ce-chat-settings-column {
+  background-color: $primary-500;
+  border-left: 1px solid $primary-400 !important;
+  overflow-y: hidden !important;
+}
+
+.ce-chat-settings {
+  background-color: $primary-600 !important;
+}
+
+.ce-chat-avatars {
+  height: calc(50px) !important;
+}
+
+.ce-chat-avatars .ce-avatar {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.ce-avatar {
+  background-color: $secondary-500 !important;
+}
+
+.ce-avatar-status {
+  background-color: $secondary-800 !important;
+}
+
+.ce-chat-settings-title {
+  font-family: "Rubik" !important;
+  padding: 20px 0 0 0 !important;
+  border-top: 1px solid $primary-400 !important;
+}
+
+.ce-dropdown {
+  color: $tertiary-50 !important;
+  background-color: $primary-600 !important;
+  border-top: none !important;
+  font-family: "Rubik" !important;
+}
+
+.ce-dropdown-icon {
+  bottom: 12px !important;
+}
+
+.ce-dropdown-label {
+  padding: 30px 25px 10px 25px !important;
+  color: $gray-400 !important;
+  background-color: $primary-600 !important;
+  font-family: "Rubik" !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.ce-dropdown-children {
+  margin: 10px 0 !important;
+  padding: 0 13px !important;
+}
+
+.ce-member-delete-button {
+  border-radius: 5px !important;
+  background-color: $primary-800 !important;
+  color: $primary-400 !important;
+  border: 1px solid $primary-400 !important;
+  top: 6px !important;
+}
+
+.ce-autocomplete-input {
+  margin: 10px 0 !important;
+  background-color: $primary-800 !important;
+  color: $tertiary-50 !important;
+  font-family: "Rubik" !important;
+  border: 1px solid $primary-400 !important;
+  border-radius: 5px !important;
+}
+
+.ce-danger-button {
+  border-radius: 5px !important;
+  background-color: $primary-800 !important;
+  color: $primary-400 !important;
+  border: 1px solid $primary-400 !important;
+}
+
+#ce-settings-photos-dropdown .ce-dropdown-children {
+  padding: 0 25px !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $primary-700;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-700;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: $primary-700;
+}
