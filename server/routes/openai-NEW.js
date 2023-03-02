@@ -2,12 +2,8 @@
   NOTE: replace the openai.js file with this file and uncomment 
   the code if you want to use the newer version of the openai API.
   OPENAI released their gpt-3.5-turbo version on 3/1/2023, this is
-  gpt-3.5 version which is what powers the ChatGPT bot.
-
-  IMPORTANT: if you do use this file, make sure you update your open ai package,
-  the package has some changes so in your terminal write `npm i openai@3.2.1`
-  to use this exact versioning. everything else works exactly the same. most of the
-  code is the same albeit with some changes. uncomment the code below
+  gpt-3.5 version which is what powers the ChatGPT bot. most of the
+  code is the same with some minor changes.
 */
 
 // import express from "express";
